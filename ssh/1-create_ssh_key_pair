@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# creating ssh pair key
+ssh-keygen -f ~/.ssh/school -b 4096 -C "done"
