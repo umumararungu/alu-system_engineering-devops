@@ -1,0 +1,4 @@
+#!usr/bin/env bash
+#using private key
+
+ssh ~/.ssh/school
