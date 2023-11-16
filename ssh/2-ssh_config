@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#refuse password authentication
+# SSH CONFIG
+
+Include /etc/ssh/ssh_config.d/*.conf
+
 Host *
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
-    IdentityFile ~/.ssh/school
-    PasswordAuthentication no
+	PasswordAuthentication no
