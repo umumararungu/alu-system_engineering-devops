@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 #refuse password authentication
 Host *
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
     IdentityFile ~/.ssh/school
     PasswordAuthentication no
