@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SSH CONFIG
 Host *
-    IdentifiedFile ~/.ssh/school
+    IdentityFile ~/.ssh/school
     PasswordAuthentication no
     
