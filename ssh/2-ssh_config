@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # SSH CONFIG
+/etc/ssh/ssh_config 
 IdentityFile ~/.ssh/school
-PasswordAuthentication no
-    
+PasswordAuthentication "no"
