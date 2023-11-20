@@ -1,4 +1,4 @@
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
 # Installing nginx on a server and configuring a simple server
 
 # Updating packages
