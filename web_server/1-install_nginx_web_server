@@ -6,4 +6,11 @@ sudo apt-get install nginx -y
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
 echo"
-"
+server {
+    listen 80;
+    index index.html
+    root /var/www/html
+}
+" | sudo tee /etc/ngix/nginx.conf
+
+sudo service nginx restart
