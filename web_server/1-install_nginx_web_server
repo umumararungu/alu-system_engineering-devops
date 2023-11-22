@@ -9,7 +9,7 @@ touch /var/www/html/index.html
 echo "<html>
 <head><title></title></head>
 <body>
-<p>Holberton School</p>
+<p>Holberton dSchool</p>
 </body>
 </html>
 " > /var/www/html/index.html
