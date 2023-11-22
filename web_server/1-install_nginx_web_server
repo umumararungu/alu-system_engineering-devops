@@ -2,16 +2,15 @@
 # Updating packages
 apt-get update
 apt-get install -y nginx
+service nginx start
 
 touch /var/www/html/index.html
-chmod u+x /var/www/html/index.html
-echo "Holberton School" > /var/www/html/index.html
-echo "server {
-     listen      80 default_server;
-     listen      [::]:80 default_server;
-     root        /var/www/html;
-     index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
 
+echo "<html>
+<head><title></title></head>
+<body>
+<p>Holberton School</p>
+</body>
+</html>
+" > /var/www/html/index.html
 service nginx restart
