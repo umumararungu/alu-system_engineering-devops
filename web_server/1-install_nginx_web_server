@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # Updating packages
-sudo apt-get update 
+# sudo apt-get update 
 
 #install nginx
-# sudo apt-get -y install nginx
-curl 127.0.0.1
+#  sudo apt-get -y install nginx
+
+echo  "hello" | sudo tee /var/html/index.html
+
+sudo service nginx restart
