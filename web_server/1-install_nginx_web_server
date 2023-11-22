@@ -3,13 +3,12 @@
 apt-get update
 apt-get install -y nginx
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-echo "Holberton School" > /etc/nginx/html/index.html
-printf %s "server {
+touch /var/www/html/index.html
+echo "Holberton School" > /var/www/html/index.html
+echo "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
-     root        /etc/nginx/html;
+     root        /var/www/html;
      index       index.html index.htm;
 }
 " > /etc/nginx/sites-available/default
