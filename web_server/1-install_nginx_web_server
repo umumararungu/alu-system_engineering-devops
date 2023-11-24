@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Updating packages
-apt install nginx
+apt-get update
+apt-get -y install nginx
 service nginx start
-rm /var/www/html/index.nginx-debian.html
+rm -rf /var/www/html/index.nginx-debian.html
 touch /var/www/html/index.html
 echo "<html><head></head><body><p>Holberton School</p></body></html>" > /var/www/html/index.html
 service nginx restart
