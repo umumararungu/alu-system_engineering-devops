@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # new installation 
 sudo apt-get -y update
 sudo apt-get -y install nginx
@@ -6,3 +7,12 @@ sudo ufw enable
 sudo ufw allow 'Nginx HTTP'
 echo "Holberton School" > /var/www/html/index.html
 sudo service nginx restart
+=======
+# new installation
+apt-get -y update
+apt-get -y install nginx
+ufw enable
+ufw allow 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.html
+service nginx restart
+>>>>>>> 996d919df4b5da56952c311c3e788d88914f9a76
