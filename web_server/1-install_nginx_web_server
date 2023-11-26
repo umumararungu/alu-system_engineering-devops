@@ -1,18 +1,7 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD
-# Updating packages
-sudo apt-get update
-sudo apt-get -y install nginx
-sudo service nginx start
-touch /var/www/html/index.html
-echo "Holberton School" > /var/www/html/index.html
-sudo nginx -t
-sudo service nginx restart
-=======
 # new installation 
 sudo apt-get update
 sudo apt-get install -y nginx
 echo "Holberton School" | sudo tee /var/www/html/index.html
 sudo nginx -t
 sudo service nginx start
->>>>>>> c080438e610e96bc721e8e040aacdad2a97a7f5a
