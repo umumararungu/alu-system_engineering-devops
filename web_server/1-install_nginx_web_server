@@ -5,5 +5,5 @@ sudo apt-get -y install nginx
 sudo service nginx start
 rm -rf /var/www/html/index.nginx-debian.html
 touch /var/www/html/index.html
-echo "Holberton School" > /var/www/html/index.html
+echo "<html><head><title></title></head><body>Holberton School</body></html>" > /var/www/html/index.html
 sudo service nginx restart
