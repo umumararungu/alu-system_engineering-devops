@@ -1,19 +1,12 @@
 #!/usr/bin/env bash
-# redirect
+#redirect
 sudo apt-get update
 sudo apt-get install -y nginx
-sudo service nginx start
-echo "Holberton School" | sudo tee /var/www/html/index.html
-sudo bash -c 'cat <<EOF > etc/nginx/sites-available/redirect_me
-server {
-   listen 80;
-   server_name _;
-   location /redirect_me {
-       return 301 https://github.com/umumararungu;
-   }
-}
-EOF'
 
-sudo ln -s /etc/nginx/sites-availbale/redirect_me /etc/nginx/sites-enabled/
+echo "Holberton School" | sudo tee /var/www/html/index.html
+
+replace="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/umumararungu permanent;"
+sudo sed -i -e "s|server_name _;|$replace|" /etc/nginx/sites-enabled/default
+
 sudo nginx -t
 sudo service nginx restart
