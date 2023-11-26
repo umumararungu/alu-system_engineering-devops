@@ -6,11 +6,11 @@ sudo service nginx start
 echo "Holberton School" | sudo tee /var/www/html/index.html
 sudo bash -c 'cat <<EOF > etc/nginx/sites-available/redirect_me
 server {
-   listen 80;
-   server_name _;
-   location /redirect_me {
-       return 301 https://github.com/umumararungu;
-   }
+    listen 80;
+    server_name _;
+    location /redirect_me {
+        return 301 https://github.com/umumararungu;
+    }
 }
 EOF'
 
