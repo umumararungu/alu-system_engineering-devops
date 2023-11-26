@@ -4,7 +4,8 @@ sudo apt update
 sudo apt-get install -y nginx
 sudo service nginx start
 echo "Holberton School" | sudo tee /var/www/html/index.html
-replace="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/umumararungu permanent;"
+replace="server_name _;
+rewrite ^\/(redirect_me)$ https:\/\/github.com\/umumararungu\/$1 permanent;"
 sudo sed -i "s/server_name _;/$replace/" etc/nginx/sites-enabled/default
 sudo nginx -t
 sudo service nginx restart
