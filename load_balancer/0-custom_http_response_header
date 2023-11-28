@@ -2,7 +2,7 @@
 # haproxy
 sudo apt-get update -y
 sudo apt-get install haproxy -y
-cat << EOF >> /etc/haproxy/haproxy.cfg
+sudo cat << EOF >> /etc/haproxy/haproxy.cfg
 frontend lb_front
         bind *:80
         default_backend lb_back
