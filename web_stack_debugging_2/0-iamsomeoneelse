@@ -11,4 +11,4 @@ sudo -u "$1" whoami
 
 
 # Run whoami command under the specified user
-sudo -u "$username" bash -c 'echo $USER'
+sudo -u "$1" bash -c 'echo $USER'
